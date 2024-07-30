@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Blog from './pages/Blog';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
-import NotFound from './pages/NotFound'; // Ensure this path is correct
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="*" element={<NotFound />} /> {/* Handle 404 errors */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </Router>
