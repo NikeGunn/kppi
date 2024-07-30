@@ -20,10 +20,10 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
         >
-          Discover premium packaging solutions that combine quality and design. 
+          Discover premium packaging solutions that combine quality and design.
         </motion.p>
         <motion.a
-          href="/services"
+          href="#/services" // Change this to hash-based URL
           className="inline-block px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.05 }}
