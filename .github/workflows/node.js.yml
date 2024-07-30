@@ -3,7 +3,7 @@ name: Deploy Vite App
 on:
   push:
     branches:
-      - main  # Deploy on push to main branch
+      - main # Deploy on push to main branch
 
 jobs:
   build-and-deploy:
@@ -23,6 +23,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Copy index.html to 404.html
+        run: cp dist/index.html dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
