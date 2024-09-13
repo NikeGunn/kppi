@@ -1,9 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet'; // Import react-helmet
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gray-100">
+      <Helmet>
+        <title>About Us | Kriti Print & Pack Industries</title>
+        <meta name="description" content="Learn about Kriti Print & Pack Industries, our mission, values, and commitment to providing innovative packaging solutions. Discover how we help businesses stand out with high-quality, customized packaging." />
+        <meta name="keywords" content="about us, packaging solutions, Kriti Print & Pack, innovative packaging, company values, customer focus" />
+        <meta property="og:title" content="About Us | Kriti Print & Pack Industries" />
+        <meta property="og:description" content="Discover Kriti Print & Pack Industries' mission, values, and dedication to delivering exceptional packaging solutions. Learn more about how we innovate and focus on quality and customer satisfaction." />
+        <meta property="og:image" content="https://www.yourwebsite.com/path/to/your/image.jpg" />
+        <meta property="og:url" content="https://www.yourwebsite.com/about" />
+      </Helmet>
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <motion.h1
@@ -71,6 +82,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

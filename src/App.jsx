@@ -7,6 +7,8 @@ import Blog from './pages/Blog';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import NotFound from './pages/NotFound';
+import Gallery from './components/Gallery';
+import { Toaster } from 'react-hot-toast'; // Import Toaster
 
 function App() {
   return (
@@ -17,11 +19,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/Services" element={<Services />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <Toaster /> {/* Add Toaster here */}
     </Router>
   );
 }

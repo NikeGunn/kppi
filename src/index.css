@@ -1,3 +1,103 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+p, a, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* Optional Styling for Card Titles */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gray-200 {
+  color: #e2e8f0;
+}
+
+.text-blue-400 {
+  color: #63b3ed;
+}
+
+.bg-blue-600 {
+  background-color: #3182ce;
+}
+
+.bg-blue-700 {
+  background-color: #2b6cb0;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Ensures logo and menu stay in their places */
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  max-width: 100px; /* Adjust as per the logo size */
+}
+
+.navbar-logo-text {
+  font-size: 1.5rem;
+  margin-left: 10px; /* Adjust for space between logo and text */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #14c4e3;
+  border-radius: calc(15px);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
