@@ -77,7 +77,7 @@ const Blog = () => {
       </Helmet>
       <section className="container mx-auto px-4 flex-grow">
         <motion.h1
-          className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-600 mt-6"
+          className="text-4xl md:text-5xl font-bold text-center mb-5 text-blue-600 mt-6"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}

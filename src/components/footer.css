@@ -13,3 +13,27 @@ footer {
   margin: 0 auto; /* Center the container */
   max-width: 100%; /* Ensure it takes full width */
 }
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

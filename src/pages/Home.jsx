@@ -60,9 +60,9 @@ const Home = () => {
         buttonLabel="Explore Our Stories"
         buttonLink="/blog"
       />
-      <div className="container mx-auto p-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Latest Blogs</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="container mx-auto p-4 m-4">
+        <h2 className="text-4xl font-bold text-center mb-8 mt-4">Latest Blogs</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
           {cardsData.map((card, index) => (
             <div 
               key={index} 

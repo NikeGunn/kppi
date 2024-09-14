@@ -101,3 +101,186 @@ body {
   background: #555;
 }
 
+
+/* Ensure text scales appropriately on smaller screens */
+h1, h2, h3, h4, h5, h6 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem); /* Responsive font size */
+}
+
+/* Make cards and containers more responsive */
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for layout, with adjustments for smaller screens */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-logo img {
+  max-width: 80px;
+}
+
+.navbar-logo-text {
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+
+/* Ensure buttons are responsive */
+button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+button:hover {
+  background-color: #dc2626;
+}
+
+/* BlogCard Responsiveness */
+.BlogCard {
+  height: auto;
+}
+
+.BlogCard img {
+  width: 100%;
+  height: auto; /* Ensure images scale correctly */
+}
+
+/* Make footer responsive */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo-text {
+    margin-left: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Media Queries for Responsiveness */
+/* Mobile phones (portrait) */
+@media (max-width: 600px) {
+  .navbar-logo img {
+    max-width: 80px; /* Smaller logo for mobile */
+  }
+
+  .navbar-logo-text {
+    font-size: 1.2rem; /* Smaller text size */
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1.5rem; /* Adjust headline size for small screens */
+  }
+
+  .BlogCard {
+    height: auto; /* Allow cards to be flexible in height */
+  }
+
+  .BlogCard img {
+    height: auto;
+  }
+
+  .footer {
+    text-align: center; /* Ensure footer is centered on small screens */
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 600px) and (max-width: 992px) {
+  .navbar-logo img {
+    max-width: 90px; /* Adjust logo size */
+  }
+
+  .navbar-logo-text {
+    font-size: 1.3rem;
+  }
+
+  .BlogCard {
+    height: 350px;
+  }
+
+  .BlogCard img {
+    height: 60%;
+  }
+}
+
+/* Desktops and large screens */
+@media (min-width: 992px) {
+  .navbar-logo img {
+    max-width: 100px;
+  }
+
+  .navbar-logo-text {
+    font-size: 1.5rem;
+  }
+
+  .BlogCard {
+    height: 400px;
+  }
+
+  .BlogCard img {
+    height: 66.67%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
