@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation to detect route changes
+import { Link, useLocation } from 'react-router-dom'; 
 import { motion } from 'framer-motion';
-import logo from '/logo.png';
+import logo from '/logo.png'; // Import your logo
 
 const Navbar = () => {
   // State to handle the mobile menu toggle
@@ -29,13 +29,19 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo and Company Name */}
-        <div className="flex items-center">
+        <div className="flex items-center space-x-2">
+          {/* Responsive logo size for mobile and desktop */}
           <Link to="/">
-            <img src={logo} alt="Kriti Logo" className="w-8 h-8" /> {/* Adjust size as needed */}
+            <img 
+              src={logo} 
+              alt="Kriti Logo" 
+              className="w-12 h-12 md:w-10 md:h-10"  // Small for mobile, larger for desktop
+            />
           </Link>
-          <Link to="/" className="text-white text-2xl font-bold">
-            <span className="ml-[-1.5px]">riti</span> {/* Different font for "riti" */}
-            <span className="text-white-300"> Print & Pack Industries</span> {/* Styling the rest */}
+          {/* Responsive text size */}
+          <Link to="/" className="text-white text-lg md:text-2xl font-bold">
+            <span className="ml-[-10px]">riti</span> 
+            <span className="text-white-300"> Print & Pack Industries</span>
           </Link>
         </div>
 
