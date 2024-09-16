@@ -39,9 +39,8 @@ const Navbar = () => {
             />
           </Link>
           {/* Responsive text size */}
-          <Link to="/" className="text-white text-lg md:text-2xl font-bold">
-            <span className="ml-[-10px]">riti</span> 
-            <span className="text-white-300"> Print & Pack Industries</span>
+          <Link to="/" className="text-white text-lg md:text-2xl font-bold ">
+            <span className="text-white-300 ml-[-4px]"> Print & Pack Industries</span>
           </Link>
         </div>
 
