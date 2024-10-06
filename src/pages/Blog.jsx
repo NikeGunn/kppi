@@ -9,15 +9,15 @@ const Blog = () => {
   const [showGallery, setShowGallery] = useState(false);
 
   const blogPosts = [
+        {
+      title: 'How Custom Packaging Enhances Brand Identity',
+      description: 'Learn how customized packaging can significantly boost your brand’s visibility and appeal.',
+      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image2.jpg?raw=true',
+    },
     {
       title: 'Innovations in Packaging for 2024',
       description: 'Discover the latest trends and innovations in packaging technology that are shaping the industry this year.',
       image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image4.jpg?raw=true',
-    },
-    {
-      title: 'How Custom Packaging Enhances Brand Identity',
-      description: 'Learn how customized packaging can significantly boost your brand’s visibility and appeal.',
-      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image2.jpg?raw=true',
     },
     {
       title: 'The Importance of Sustainable Packaging',
@@ -27,32 +27,32 @@ const Blog = () => {
     {
       title: 'The Future of Packaging',
       description: 'A glimpse into what the future holds for packaging design and innovations in the next decade.',
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fcardboard%2520box%2F&psig=AOvVaw2xdcQabjFQg7bqeTLEuIZ6&ust=1726312158925000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNiSloTkv4gDFQAAAAAdAAAAABAE',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/4.png?raw=true',
     },
     {
       title: 'Eco-friendly Packaging Trends',
       description: 'Explore the growing demand for eco-friendly packaging and its impact on global sustainability.',
-      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image5.jpg?raw=true',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/5.png?raw=true',
     },
     {
       title: 'The Role of Technology in Packaging',
       description: 'How technological advancements are transforming the packaging industry.',
-      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image6.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/NikeGunn/imagess/refs/heads/main/kriti-print/6.webp',
     },
     {
       title: 'Packaging Design and Branding',
       description: 'Why great packaging design is essential for building a powerful brand identity.',
-      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image7.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/NikeGunn/imagess/refs/heads/main/kriti-print/6.webp',
     },
     {
       title: 'Maximizing Efficiency with Smart Packaging',
       description: 'How smart packaging solutions are improving supply chain efficiency.',
-      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image8.jpg?raw=true',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/8.png?raw=true',
     },
     {
       title: 'Consumer Preferences in Packaging',
       description: 'Understand the latest consumer packaging preferences to stay ahead in the market.',
-      image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image9.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/NikeGunn/imagess/refs/heads/main/kriti-print/10.webp',
     },
   ];
 

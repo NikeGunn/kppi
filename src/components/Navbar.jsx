@@ -35,7 +35,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Kriti Logo"
-              className="w-12 h-12 md:w-10 md:h-10"  // Small for mobile, larger for desktop
+              className="w-13 h-13 md:w-10 md:h-10"  // Small for mobile, larger for desktop
             />
           </Link>
           {/* Responsive text size */}

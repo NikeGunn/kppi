@@ -14,6 +14,11 @@ const Home = () => {
     {
       title: 'Exciting New Project',
       description: 'We are thrilled to announce our latest cartoon packaging project that will revolutionize the industry.',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/1.jpg?raw=true',
+    },
+    {
+      title: 'Behind the Scenes',
+      description: 'Take a sneak peek into our creative process and see how we bring cartoons to life.',
       image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image4.jpg?raw=true',
     },
     {
@@ -22,24 +27,19 @@ const Home = () => {
       image: 'https://github.com/NikeGunn/kritiassets/blob/main/blog-image1.jpg?raw=true',
     },
     {
-      title: 'Behind the Scenes',
-      description: 'Take a sneak peek into our creative process and see how we bring cartoons to life.',
-      image: 'https://via.placeholder.com/150',
-    },
-    {
       title: 'New Innovations',
       description: 'Our team is constantly pushing the boundaries with new innovations in packaging design.',
-      image: 'https://via.placeholder.com/150',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/2.jpg?raw=true',
     },
     {
       title: 'Creative Designs',
       description: 'Explore the artistic journey behind our unique packaging designs for popular cartoon brands.',
-      image: 'https://via.placeholder.com/150',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/3.jpg?raw=true',
     },
     {
       title: 'Future Trends',
       description: 'Discover what’s next in the world of cartoon packaging and creative designs.',
-      image: 'https://via.placeholder.com/150',
+      image: 'https://github.com/NikeGunn/imagess/blob/main/kriti-print/4.png?raw=true',
     },
   ];
 
