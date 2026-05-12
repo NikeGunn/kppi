@@ -3,7 +3,10 @@ name: Deploy Vite App
 on:
   push:
     branches:
-      - main # Deploy on push to main branch
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -11,12 +14,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # Use the version of Node.js your project requires
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
@@ -27,9 +30,14 @@ jobs:
       - name: Copy index.html to 404.html
         run: cp dist/index.html dist/404.html
 
+      - name: Add .nojekyll
+        run: touch dist/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: kritiprintpack.com
+          force_orphan: true
+          enable_jekyll: false
