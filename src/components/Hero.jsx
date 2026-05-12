@@ -1,5 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
+const MotionLink = motion(Link);
 
 const Hero = () => {
   return (
@@ -22,15 +25,15 @@ const Hero = () => {
         >
           Discover premium packaging solutions that combine quality and design.
         </motion.p>
-        <motion.a
-          href="#/services" // Change this to hash-based URL
+        <MotionLink
+          to="/services"
           className="inline-block px-8 py-4 text-lg font-semibold bg-white text-blue-600 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
           Explore Our Services
-        </motion.a>
+        </MotionLink>
       </div>
     </section>
   );

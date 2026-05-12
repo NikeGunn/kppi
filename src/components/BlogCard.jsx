@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
-const BlogCard = ({ title, description = '', image, link }) => {
+const BlogCard = ({ title, description = '', image }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
   const navigate = useNavigate();
 
@@ -54,7 +54,6 @@ BlogCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   image: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired, // Pass the link for navigation
 };
 
 export default BlogCard;

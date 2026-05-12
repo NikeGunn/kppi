@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BlogCard from '../components/BlogCard';
-import Gallery from '../components/Gallery';
 import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import { Helmet } from 'react-helmet'; // Import react-helmet
 
 const Blog = () => {
-  const [showGallery, setShowGallery] = useState(false);
-
   const blogPosts = [
         {
       title: 'How Custom Packaging Enhances Brand Identity',
@@ -56,14 +53,6 @@ const Blog = () => {
     },
   ];
 
-  const openGallery = () => {
-    setShowGallery(true);
-  };
-
-  const closeGallery = () => {
-    setShowGallery(false);
-  };
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Helmet>
@@ -72,8 +61,8 @@ const Blog = () => {
         <meta name="keywords" content="blog, packaging innovations, custom packaging, eco-friendly packaging, packaging trends, branding, technology in packaging" />
         <meta property="og:title" content="Our Blog | Kriti Print & Pack Industries" />
         <meta property="og:description" content="Discover our latest blog posts on packaging trends, custom designs, and more. Stay informed on how packaging innovations can benefit your business." />
-        <meta property="og:image" content="https://www.yourwebsite.com/path/to/your/blog-image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/blog" />
+        <meta property="og:image" content="https://github.com/NikeGunn/kritiassets/blob/main/blog-image1.jpg?raw=true" />
+        <meta property="og:url" content="https://kritiprintpack.com/#/blog" />
       </Helmet>
       <section className="container mx-auto px-4 flex-grow">
         <motion.h1
@@ -98,7 +87,6 @@ const Blog = () => {
                 title={post.title}
                 description={post.description}
                 image={post.image}
-                onClick={openGallery} // Pass onClick correctly
               />
             </motion.div>
           ))}
@@ -106,8 +94,6 @@ const Blog = () => {
       </section>
 
       <Footer />
-
-      {showGallery && <Gallery blogPosts={blogPosts} onClose={closeGallery} />}
     </div>
   );
 };

@@ -30,8 +30,8 @@ const Services = () => {
         <meta name="keywords" content="custom packaging, sustainable packaging, rapid prototyping, packaging solutions, eco-friendly packaging" />
         <meta property="og:title" content="Our Services | Kriti Print & Pack Industries" />
         <meta property="og:description" content="Discover our custom packaging solutions, sustainable packaging options, and rapid prototyping services tailored to enhance your products and meet your needs." />
-        <meta property="og:image" content="https://www.yourwebsite.com/path/to/your/service-image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/services" />
+        <meta property="og:image" content="https://github.com/NikeGunn/kritiassets/blob/main/blog-image2.jpg?raw=true" />
+        <meta property="og:url" content="https://kritiprintpack.com/#/services" />
       </Helmet>
 
       {/* Main content section with flex-grow to push footer down */}

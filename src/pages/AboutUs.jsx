@@ -12,8 +12,8 @@ const AboutUs = () => {
         <meta name="keywords" content="about us, packaging solutions, Kriti Print & Pack, innovative packaging, company values, customer focus" />
         <meta property="og:title" content="About Us | Kriti Print & Pack Industries" />
         <meta property="og:description" content="Discover Kriti Print & Pack Industries' mission, values, and dedication to delivering exceptional packaging solutions. Learn more about how we innovate and focus on quality and customer satisfaction." />
-        <meta property="og:image" content="https://www.yourwebsite.com/path/to/your/image.jpg" />
-        <meta property="og:url" content="https://www.yourwebsite.com/about" />
+        <meta property="og:image" content="https://github.com/NikeGunn/kritiassets/blob/main/blog-image4.jpg?raw=true" />
+        <meta property="og:url" content="https://kritiprintpack.com/#/about" />
       </Helmet>
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
